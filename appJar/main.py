@@ -1,3 +1,4 @@
+import random
 from appjar import gui
 
 app = gui("Guide to wiping out Ganon from this Universe", "1000x550")
@@ -14,7 +15,14 @@ if __name__ == "__main__":
     #app.addImage("memes", "ezgif-2-e07e7cb62724.gif")
 
     # these go in the main window
+
     app.addButtons(["Thunderblight Ganon", "Windblight Ganon", "Waterblight Ganon", "Fireblight Ganon", "Calamity Ganon", "Dark Beast Ganon"], launch)
+
+    # app.addImage("stasis zelda", "zelda-being-great-for-the-first-time-in-her-life.gif")
+    # app.setImageSize("stasis zelda", 100, 100)
+    # # app.addImage("bad zelda", "zelda-is-bad.gif")
+    # # app.addImage("scared zelda", "zelda-is-scared.gif")
+    # # app.addImage("frog zelda", "zelda-makes-link-eat-a-frog.gif")
 
     # this is a pop-up
     app.startSubWindow("Thunderblight Ganon", modal=True)
@@ -54,10 +62,19 @@ if __name__ == "__main__":
     app.stopSubWindow()
 
     app.setLabelBg("die", "red")
-    app.addButton("Thunderblight Ganon3", press)
-    app.addButton("Windblight Ganon3", press)
-    app.addButton("Waterblight Ganon3", press)
-    app.addButton("Firebllight Ganon3", press)
-    app.addButton("Calamity Ganon3", press)
-    app.addButton("Dark Beast Ganon3", press)
+    # app.addButton("Thunderblight Ganon3", press)
+    # app.addButton("Windblight Ganon3", press)
+    # app.addButton("Waterblight Ganon3", press)
+    # app.addButton("Firebllight Ganon3", press)
+    # app.addButton("Calamity Ganon3", press)
+    # app.addButton("Dark Beast Ganon3", press)
+
+    list_names = ["zelda-being-great-for-the-first-time-in-her-life.gif", "zelda-is-bad.gif", "zelda-is-scared.gif"]
+    ran_name = random.choice(list_names)
+    app.addImage( "abc",ran_name)
+
+    # app.addImage("stasis zelda", "zelda-being-great-for-the-first-time-in-her-life.gif")
+    app.setImageSize("abc", 400, 500)
+
+
     app.go()
