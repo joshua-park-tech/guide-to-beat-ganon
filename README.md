@@ -13,3 +13,8 @@ now worry about your weapons
 0.02 
 - now generates random pictures
 - there are 3 pictures, can you discover them all?
+
+
+#next update
+0.03
+now there is a tab for every ganon
